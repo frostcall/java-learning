@@ -1,7 +1,15 @@
-import java.util.Scanner;
+// import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
+        String name = JOptionPane.showInputDialog("Enter your name");
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null, "OK "+name+ ". It Looks like you are "+age+" years old.");
+
+        
+/*
         System.out.println("Hello, World!");
         System.out.print("\tNew Line printed.\n");
         System.out.println("Another new Line printed.");
@@ -26,5 +34,7 @@ public class App {
 
         System.out.println("Hello "+name);
         System.out.println("Did you say you were "+newAge+" years old?");
+
+*/
     }
 }
